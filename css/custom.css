@@ -1,10 +1,27 @@
+/*grillitype tests*/
 @font-face {
-    font-family:'TekoMed';
-    src:url('fonts/teko/Teko-Medium.ttf;')
+  font-family: "GT Haptik Black";
+  src: url("../fonts/gt-haptik/GT-Haptik-Black.ttf") format("ttf"),
+       url("../fonts/gt-haptik/GT-Haptik-Black.otf") format("otf"),
+       url("../fonts/gt-haptik/GT-Haptik-Black.woff") format("woff"),
+       url("../fonts/gt-haptik/GT-Haptik-Black.woff2") format("woff2"),
+       url("../fonts/gt-haptik/GT-Haptik-Black.eot") format("eot");
 }
 @font-face {
-    font-family:'PtMono';
-    src:url('fonts/pt-mono.regular.ttf')
+  font-family: "GT Haptik Bold";
+  src: url("../fonts/gt-haptik/GT-Haptik-Bold.ttf") format("ttf"),
+       url("../fonts/gt-haptik/GT-Haptik-Bold.otf") format("otf"),
+       url("../fonts/gt-haptik/GT-Haptik-Bold.woff") format("woff"),
+       url("../fonts/gt-haptik/GT-Haptik-Bold.woff2") format("woff2"),
+       url("../fonts/gt-haptik/GT-Haptik-Bold.eot") format("eot");
+}
+@font-face {
+  font-family: "GT Haptik Regular";
+  src: url("../fonts/gt-haptik/GT-Haptik-Regular.ttf") format("ttf"),
+       url("../fonts/gt-haptik/GT-Haptik-Regular.otf") format("otf"),
+       url("../fonts/gt-haptik/GT-Haptik-Regular.woff") format("woff"),
+       url("../fonts/gt-haptik/GT-Haptik-Regular.woff2") format("woff2"),
+       url("../fonts/gt-haptik/GT-Haptik-Regular.eot") format("eot");
 }
 .hashtag{
   position: absolute;
@@ -21,11 +38,16 @@
 }
 h1, h2, h3 {
     line-height:1.1;
-    font-family: 'TekoMed';
     color:#fff;
+    font-family: 'GT Haptik Bold',sans-serif!important;
+    text-transform:none!important;
+    font-size: 3rem!important;
+    font-weight: 600;
+    line-height:1.1;
 }
 body, p {
-    font-family:'PtMono'!important;
+    font-family:"GT Haptik Regular"!important;
+    font-size:
 
 }
 p {
@@ -33,7 +55,8 @@ p {
     font-size:28px!important;
 }
 .reveal .state-background, body {
-    background:linear-gradient(to bottom right, #190061 , #3500d3)!important;
+    background: #5D47BA!important;
+
 }
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
     border-right-color:deeppink;
@@ -42,8 +65,11 @@ p {
     border-left-color:deeppink;
 }
 .reveal .progress span {
-    background:deeppink;
+    background: #ffff00;
 }
 .reveal .controls {
-  color: deeppink;
+  color: #ffff00;
+}
+.reveal section img {
+  max-height: 450px;
 }
